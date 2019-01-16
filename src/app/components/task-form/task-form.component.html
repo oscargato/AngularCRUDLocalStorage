@@ -1,0 +1,32 @@
+<div class="card">
+	<div class="card-header">Nueva Tarea</div>
+	<div class="card-body">
+		<form (submit)="agregarTarea(newTitle,newDescription)">
+			<div class="form-group">
+				<label class="form-text">Titulo</label>
+				<input type="text" 
+					   class="form-control" 
+					   id="title" 
+					   required="" 
+					   name="title" 
+						       
+					   placeholder="Agregar Titulo"
+					   #newTitle 
+				>				
+			</div>
+
+			<div class="form-group">
+				<textarea name="" class="form-control" cols="54" rows="10" placeholder="Descripcion"
+						  #newDescription
+				>
+				</textarea>			
+			</div>		
+	
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary btn-block">
+					Agregar
+				</button>				
+			</div>
+		</form>		
+	</div>
+</div>
